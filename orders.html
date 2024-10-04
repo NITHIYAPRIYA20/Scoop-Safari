@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ORDERS</title>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: plum;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            box-shadow: white;
+        }
+
+        nav.log img {
+            width: 75px;
+            height: 75px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+
+        nav ul li {
+            float: left;
+            list-style: none;
+            margin: 7px;
+        }
+
+        nav ul li a {
+            margin: 3px;
+            padding: 3px;
+            text-decoration: none;
+            font-size: 1.0rem;
+            color: white;
+        }
+
+        a:hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="./special.html">SPECIAL</a></li>
+            <li><a href="./orders.html">ORDERS</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+    </nav><br><br><br><br>
+    <div>
+        <center><img src="ice/979765.jpg" width="1900x" height="800px"></center>
+    </div>
+    <p><b><i>Beat the heat with a cool treat!</i></b><br>
+        <b><i>Order now and indulge in our creamy scoop ice cream,available in a variety of mouth-watering
+                flavors.</i></b><br>
+        <b><i>From classic vanilla and chocolate to fruity strawberry and mango,we have something for
+                everyone.</i></b><br>
+        <b><i>Our ice cream is made fresh daily with the finest ingredients, ensuring a rich and smooth texture that
+                will leave you wanting more.</i></b><br> <b><i>Don't miss out on this sweet deal-order now and enjoy a
+                scoop(or two!) of your favorite ice cream!
+    </p>
+    <center>
+        <h1>Order NOW!!</h1>
+    </center>
+    <form action="./orders.py" method="post">
+        Name:<input type="text" name="name"><br><br>
+        Password:<input type="password" name="pass"><br><br>
+        Flavour:<label for="flavour"></label>
+        <select id="flavour" name="flavour">
+            <option value="Strawberry">Strawberry</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Vanilla">Vanilla</option>
+            <option value="Butterscotch">Butterscotch</option>
+            <option value="Mint Chocolate Chip">Mint Chocolate Chip</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Pistachio">Pistachio</option>
+            <option value="Black Currant">Black Currant</option>
+            <option value="Mango">Mango</option>
+        </select><br><br>
+        Quantity:<label for="quantity"></label>
+        <input type="number" id="quantity" name="quantity"><br><br>
+        Email:<label for="email"></label>
+        <input type="text" placeholder="your email" name="email"><br><br>
+        Mobile.No:<label for="Mobile.no"></label>
+        <input type="number" placeholder="your number" name="mobileno"><br><br>
+        Address:<label for="address"></label>
+        <input type="text" placeholder="your address" name="address"><br><br>
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+
+</html>
